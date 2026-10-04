@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phim Hoạt Hình</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+<div class="header"><div class="header-inner"><a class="logo" href="index.html">Phim<span>HoạtHình</span></a><label class="search">Tìm phim<input id="search" type="search" placeholder="Nhập tên phim…"></label></div></div>
+<div class="page">
+    <div class="head-link" role="navigation" aria-label="Danh mục">
+        <button class="active" data-filter="all">Phim hoạt hình</button><button data-filter="favorites">Phim hoạt hình yêu thích</button><button data-filter="characters">Nhân vật hoạt hình</button><button data-filter="about">Giới thiệu</button>
+    </div>
+    <div class="info" id="info" hidden></div>
+    <div class="content">
+        <div class="left-content">
+            <div class="list-heading"><h2>Danh sách phim</h2><label>Sắp xếp<select id="sort"><option value="new">Mới cập nhật</option><option value="views">Xem nhiều trên trang</option></select></label></div>
+            <div id="video-list"></div><p id="empty" hidden>Không tìm thấy phim phù hợp.</p>
+        </div>
+        <div class="right-content">
+            <div id="player" class="player"></div>
+            <h1 id="video-title"></h1>
+            <div class="meta"><span id="channel"></span><button id="favorite" aria-pressed="false">♡ Yêu thích</button></div>
+            <p id="description"></p>
+            <a id="source" target="_blank" rel="noopener noreferrer">Mở video gốc nếu trình phát không khả dụng</a>
+        </div>
+    </div>
+    <div class="footer">© 2026 Phim Hoạt Hình · Bài tập HTML, CSS và JavaScript</div>
+</div>
+</body>
+</html>
